@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="SIGEIN.Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="App_Themes/Tema1/estilo1.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="Script/jquery-2.1.4.js"></script>
+    <script src="Script/Login.js"></script>
+</head>
+<body>
+ 
+    
+    <form id="form1" runat="server">
+    <div>
+
+        <div id="cabecera">
+            <div id ="contenidoCabecera">
+  
+   <div id="logo">
+             <img src="images/Sin fondo.png" alt="Sin fondo" />
+        </div>
+        <div id="titulo">
+          
+           <img src="images/letras.png" alt ="letras" />
+        </div>
+ 
+            </div>
+        </div>
+
+
+<ul class="mi-menu">
+  <li><a href="URL_enlace_1"> Contactanos </a></li>
+  <li>
+    <a href="#"> Informacion </a>
+   
+  </li>
+ 
+</ul>
+
+
+        <div id="bajo">
+          
+             <div id="columnaCentro">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <h1>hola aqui es dond se escribe</h1>
+                <h1>hola aqui es dond se escribe</h1>
+                <h1>hola aqui es dond se escribe</h1>
+                <h1>hola aqui es dond se escribe</h1>
+              <p>&nbsp;</p>
+        </asp:ContentPlaceHolder>
+
+             </div>
+          
+        </div>
+
+              
+    </div>
+    </form>
+
+    
+
+    <div id="open_close">Login</div>
+    <form id="login">
+    <label>Usuario</label>
+    <input type="text" id="Usuario" placeholder="Usuario" />
+    <label>Contraseña</label>
+    <input type="password" id="pass" placeholder="Contraseña" />
+    <input type="submit" value="Enviar" id="enviar" />
+        </form>
+
+</body>
+</html>

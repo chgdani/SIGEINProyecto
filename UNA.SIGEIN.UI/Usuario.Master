@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Usuario.master.cs" Inherits="SIGEIN.Usuario" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="App_Themes/Tema1/estilo1.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="Script/jquery-2.1.4.js"></script>
+    <script src="Script/Login.js"></script>
+   
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    <div>
+
+        <div id="cabecera">
+            <div id ="contenidoCabecera">
+  
+   <div id="logo">
+             <img src="images/Sin fondo.png" alt="Sin fondo" />
+        </div>
+        <div id="titulo">
+          
+           <img src="images/letras.png" alt ="letras" />
+        </div>
+ 
+            </div>
+        </div>
+
+<ul class="mi-menu">
+  <li><a href="URL_enlace_1"> Ayuda </a></li>
+  <li><a href="CambiarContraseña.aspx"> Cambiar Contraseña </a></li>
+  <li><a href="URL_enlace_3"> Estado Avería </a></li>
+  <li><a href="ReportarAveria.aspx"> Reportar Avería </a></li>
+  <li><a href="Usuario.aspx"> Inicio </a></li>
+</ul>
+
+        <div id="bajo">
+            <div id="columnaizq"></div>
+             <div id="columnaCentro">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <h1>hola aqui es dond se escribe</h1>
+        </asp:ContentPlaceHolder>
+
+             </div>
+              <div id="columnaDer"></div>
+             <div id="pie"></div>
+        </div>
+
+         <div id="">
+
+
+        </div>
+
+       
+    </div>
+    </form>
+</body>
+</html>
